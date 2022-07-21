@@ -8,14 +8,14 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const LaunchTime = new Date('July 25, 2022 00:00:00 GMT+00:00');
+const LaunchTime = new Date(2022,6,25,0,0);
 
 // Set background year
 year.innerText = currentYear;
 
 // Update countdown time
 function updateCountdown() {
-  const currentTime = Date.now();
+  const currentTime = new Date().getTime;
   const diff = LaunchTime - currentTime;
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
