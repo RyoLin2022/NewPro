@@ -8,7 +8,7 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const LaunchTime = new Date(2022,6,25,0,0);
+const LaunchTime = new Date('July 25, 2022 00:00:00 GMT+00:00');
 
 // Set background year
 year.innerText = currentYear;
