@@ -15,7 +15,7 @@ year.innerText = currentYear;
 
 // Update countdown time
 function updateCountdown() {
-  const currentTime = new Date().getTime;
+  const currentTime = Date.now();
   const diff = LaunchTime - currentTime;
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
