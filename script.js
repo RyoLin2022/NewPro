@@ -8,7 +8,7 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
+const LaunchTime = new Date(`July 25 ${currentYear} 00:00:00`);
 
 // Set background year
 year.innerText = currentYear + 1;
@@ -16,7 +16,7 @@ year.innerText = currentYear + 1;
 // Update countdown time
 function updateCountdown() {
   const currentTime = new Date();
-  const diff = newYearTime - currentTime;
+  const diff = LaunchTime - currentTime;
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
