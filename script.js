@@ -8,10 +8,10 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const LaunchTime = new Date(`July 25 ${currentYear} 00:00:00`);
+const LaunchTime = new Date(2022,7,25,0,0);
 
 // Set background year
-year.innerText = currentYear + 1;
+year.innerText = currentYear;
 
 // Update countdown time
 function updateCountdown() {
